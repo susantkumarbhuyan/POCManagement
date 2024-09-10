@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "spring.boot.admin.client.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.admin.client.url'"
+  },
+  {
+    "name": "poc.openapi.dev-url",
+    "type": "java.lang.String",
+    "description": "A description for 'poc.openapi.dev-url'"
+  },
+  {
+    "name": "poc.openapi.prod-url",
+    "type": "java.lang.String",
+    "description": "A description for 'poc.openapi.prod-url'"
+  }
+]}
