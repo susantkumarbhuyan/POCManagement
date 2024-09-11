@@ -2014,3 +2014,11 @@ org.springframework.core.annotation.AnnotationConfigurationException: Please ens
 2024-09-11 02:05:00 INFO  com.poc.service.CronService - User Info 2
 2024-09-11 02:05:30 DEBUG com.poc.service.StudentService - StudatedList
 2024-09-11 02:05:30 INFO  com.poc.service.CronService - User Info 2
+2024-09-11 02:06:00 DEBUG com.poc.service.StudentService - StudatedList
+2024-09-11 02:06:00 INFO  com.poc.service.CronService - User Info 2
+2024-09-11 02:06:18 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-09-11 02:06:18 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-11 02:06:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 02:06:18 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-11 02:06:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2024-09-11 02:06:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.

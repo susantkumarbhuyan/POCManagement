@@ -23,7 +23,7 @@ public class OpenAPIConfig {
   private String prodUrl;
 
   @Bean
-  public OpenAPI myOpenAPI() {
+   OpenAPI myOpenAPI() {
     Server devServer = new Server();
     devServer.setUrl(devUrl);
     devServer.setDescription("Server URL in Development environment");
@@ -40,10 +40,10 @@ public class OpenAPIConfig {
     License mitLicense = new License().name("MIT License").url("https://choosealicense.com/licenses/mit/");
 
     Info info = new Info()
-        .title("Tutorial Management API")
+        .title("POC Management API")
         .version("1.0")
         .contact(contact)
-        .description("This API exposes endpoints to manage tutorials.").termsOfService("https://www.bezkoder.com/terms")
+        .description("This API exposes endpoints to manage tutorials.").termsOfService("https://www.poc.com/terms")
         .license(mitLicense);
 
     return new OpenAPI().info(info).servers(List.of(devServer, prodServer));

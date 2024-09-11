@@ -46,6 +46,13 @@ public class StudentService {
 			Optional<Student> existingStudent = studentRepository.findById(id);
 			if (existingStudent.isPresent()) {
 				Student student = existingStudent.get();
+				
+				
+				student.setName(updatedStudent.getName());
+				student.setAddress(updatedStudent.getAddress());
+				student.setAge(updatedStudent.getAge());
+				student.setDocuments(updatedStudent.getDocuments());
+				
 				var user = studentRepository.save(student);
 				response.setData(user);
 				response.setStatusCode(ResponseConstants.SUCCESS_CREATED);

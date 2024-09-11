@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.poc.models.Student;
 import com.poc.otherclasses.BaseResponse;
 import com.poc.otherclasses.POCException;
+import com.poc.security.AdminPermission;
 import com.poc.security.CombinePermission;
 import com.poc.service.StudentService;
 
@@ -55,7 +56,7 @@ public class StudentController {
          return null;
     }
 
-    @CombinePermission
+    @AdminPermission
     @DeleteMapping("/secure/delete/{id}")
     public BaseResponse<String> deleteStudent(@PathVariable Long id) {
        try {
